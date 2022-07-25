@@ -342,7 +342,7 @@ export default function EnhancedTable() {
     const isSelected = (name) => selected.indexOf(name) !== -1;
 
     const showCarDetails = (id) => {
-        // window.location.pathname = `/dashboard/car-details/${id}`
+        window.location.pathname = `/dashboard/edit-sell-car/${id}`
     }
 
     // Avoid a layout jump when reaching the last page with empty rows.

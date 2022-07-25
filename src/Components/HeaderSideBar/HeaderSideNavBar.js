@@ -11,7 +11,8 @@ import CarAcquisition from '../CarAcquisition/CarAcquisition'
 import AddCarAcquisition from '../CarAcquisition/AddCarAcquisition'
 import SellCar from '../CarSelling/CarSale'
 import AddSellCar from '../CarSelling/AddCarSelling'
-
+import EditSellCar from '../CarSelling/EditSellCar';
+import EditCarAcquisition from '../CarAcquisition/EditCarAcquisition'
 
 const Container = styled.div`
   width : 100%;
@@ -33,8 +34,10 @@ const HomeComponent = ({ selectedMenu }) => {
       {url.includes("edit-car-master") && <AddCarMaster/>}
       {url.includes("car-acquisition") && <CarAcquisition/>}
       {url.includes("add-car-acquisition") && <AddCarAcquisition/>}
+      {url.includes("edit-car-acquisition") && <EditCarAcquisition/>}
       {url.includes("sell-car") && <SellCar/>}
       {url.includes("add-sell-car") && <AddSellCar/>}
+      {url.includes("edit-sell-car") && <EditSellCar/>}
       {selectedMenu === "OPTION4" && <Menu3/>}
     </>
   )
